@@ -16,15 +16,16 @@ This repo contains a module that creates an Elasticsearch cluster with kibana [l
     * Target group on 5601 for kibana
 * Jumper server
     * One jumper server deployed in a public subnet
+    * Security group allowing SSH access to jumper from the public internet
     * SSH key saved in secrets manager under `ssh/jumper_key`
 * Elastic cluster
     * Three master nodes
     * Three data nodes
-    * Security groups allowing ssh access and elastic service ports from jumper
+    * Security group allowing ssh access and elastic service ports from jumper
     * SSH key saved in secrets manager under `ssh/es_key`
 * Kibana instance
     * One kibana instance
-    * Security groups allowing ssh access and kibana service port from jumper
+    * Security group allowing ssh access and kibana service port from jumper
     * SSH key saved in secrets manager under `ssh/kibana_key`
 
 ## Deployment
