@@ -46,7 +46,7 @@ module "jumper_security_group" {
       from_port   = 22
       to_port     = 22
       protocol    = "tcp"
-      cidr_blocks = join(",", formatlist("%s/32", "77.137.70.15"))
+      cidr_blocks = join(",", formatlist("%s/32", "[YOUR_IP]"))
     }
   ]
   egress_rules = ["all-all"]
